@@ -6,7 +6,10 @@
   box-sizing: border-box;
 }
 
-p, h1, h2, h3 {
+p,
+h1,
+h2,
+h3 {
   font-family: "Poppins", sans-serif;
 }
 
@@ -321,5 +324,106 @@ button {
   .history_item p {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.about {
+  margin-top: 300px;
+  width: 100vw;
+  height: 540px;
+  position: relative;
+}
+
+.about_image {
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  top: -120px;
+  left: 8.3vw;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.about_texts {
+  position: absolute;
+  background-color: rgba(64, 38, 19, 1);
+  width: 80%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  padding: 52px 15px 60px 526px;
+}
+
+.about_texts_type1 {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+  max-width: 445px;
+}
+
+.about_texts_type2 {
+  color: rgba(255, 255, 255, 0.71);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  max-width: 514px;
+}
+
+.about_texts_2 {
+  margin-bottom: 40px;
+}
+
+.about_texts_res {
+  display: none;
+}
+
+@media (max-width: 1240px) {
+  .about_texts_2 {
+    display: none;
+  }
+  .about_texts_3 {
+    display: none;
+  }
+  .about_texts_res {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about_image {
+    top: -28%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .about_texts {
+    width: 100%;
+    padding: 370px 8.3vw 0 8.3vw;
+  }
+  .about_texts_type1 {
+    max-width: 900px;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+  .about_texts_res {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about {
+    margin-top: 229px;
+    height: 491px;
+  }
+  .about_image {
+    top: -20%;
+    width: 80vw;
+    height: 272px;
+  }
+  .about_texts {
+    padding-top: 212px;
   }
 }
