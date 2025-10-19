@@ -579,6 +579,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 52px;
+  margin-bottom: 180px;
 }
 
 .section-text {
@@ -642,8 +643,9 @@ button {
     align-items: left;
     gap: 16px;
   }
-  .section4{
+  .section4 {
     gap: 32px;
+    margin-bottom: 120px;
   }
   .section-text1 {
     max-width: 100%;
@@ -663,3 +665,124 @@ button {
   }
 }
 
+.section5 {
+  display: flex;
+  margin-top: 180px;
+  width: 85vw;
+  margin: 0 auto;
+  gap: 52px;
+  flex-direction: column;
+}
+
+.s5_header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.s5_header h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.s5_subtext {
+  text-align: center;
+  color: #888;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.grid-item {
+  border: 1px solid #dddddd;
+  padding: 32px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid-item1-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-right: 10px;
+}
+
+.question-box {
+  font-weight: 500;
+  font-size: 20px;
+  color: #1e1000;
+}
+
+.answer {
+  color: #aaaaaa;
+  font-size: 14px;
+  max-width: 1000px;
+  line-height: 32px;
+}
+
+.grid-item1-arrow {
+  transform: rotate(90deg);
+}
+
+.question_box_res {
+  text-align: center;
+  display: none;
+}
+
+.answer_res {
+  text-align: center;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .section5 {
+    flex-direction: row;
+    overflow-x: scroll;
+    scrollbar-color: rgba(255, 159, 52, 1) rgba(250, 250, 250, 1);
+
+  }
+
+  .s5_header h2 {
+    width: 82vw;
+    font-size: 24px;
+  }
+
+  .s5_subtext {
+    width: 82vw;
+    margin-bottom: 32px;
+  }
+
+  .question_box_res {
+    display: inline-block;
+  }
+
+  .answer_res {
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+
+  .questions {
+    flex-direction: row;
+  }
+
+  .grid-item {
+    width: 80vw;
+  }
+
+  .grid-item1 {
+    display: none;
+  }
+
+  .faq_arrow {
+    display: none;
+  }
+}
